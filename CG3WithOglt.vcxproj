@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{33AA08FF-8441-4E67-94C0-1DD5EFC6B40A}</ProjectGuid>
+    <RootNamespace>CG3WithOglt</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>..\includes;..\includes\assimpinclude;..\includes\glm;..\includes\freetypeinclude;..\includes\glutinclude;..\includes\glewinclude;..\includes\fbxinclude;..\includes\openalinclude;$(IncludePath)</IncludePath>
+    <LibraryPath>..\libs;..\libs\assimplib\x86;..\libs\freetypelib;..\libs\glewlib;..\libs\glutlib;..\libs\fbxlib\vs2015\x86\debug;..\libs\openallib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>..\includes;..\includes\assimpinclude;..\includes\glm;..\includes\freetypeinclude;..\includes\glutinclude;..\includes\glewinclude;..\includes\fbxinclude;..\includes\openalinclude;..\includes\antTweakBarinclude;$(IncludePath)</IncludePath>
+    <LibraryPath>..\libs;..\libs\assimplib\x86;..\libs\freetypelib;..\libs\glewlib;..\libs\glutlib;..\libs\fbxlib\vs2015\x86\release;..\libs\openallib;..\libs\antTweakBarlib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_MBCS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glew32.lib;libfbxsdk-md.lib;OpenAL32.lib;alut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_MBCS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32.lib;libfbxsdk-md.lib;OpenAL32.lib;alut.lib;AntTweakBar.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="alut_backend.h" />
+    <ClInclude Include="glut_backend.h" />
+    <ClInclude Include="oglt_abo.h" />
+    <ClInclude Include="oglt_app.h" />
+    <ClInclude Include="oglt_assimp_model.h" />
+    <ClInclude Include="oglt_audio_source.h" />
+    <ClInclude Include="oglt_basic_shape.h" />
+    <ClInclude Include="oglt_callback.h" />
+    <ClInclude Include="oglt_camera.h" />
+    <ClInclude Include="oglt_fbx_model.h" />
+    <ClInclude Include="oglt_freetypefont.h" />
+    <ClInclude Include="oglt_iapp.h" />
+    <ClInclude Include="oglt_ibackend.h" />
+    <ClInclude Include="oglt_imaterial.h" />
+    <ClInclude Include="oglt_irenderable.h" />
+    <ClInclude Include="oglt_ishaderable.h" />
+    <ClInclude Include="oglt_light.h" />
+    <ClInclude Include="oglt_mesh.h" />
+    <ClInclude Include="oglt_resource.h" />
+    <ClInclude Include="oglt_scene_node.h" />
+    <ClInclude Include="oglt_scene_object.h" />
+    <ClInclude Include="oglt_shader.h" />
+    <ClInclude Include="oglt_skeleton_material.h" />
+    <ClInclude Include="oglt_skybox.h" />
+    <ClInclude Include="oglt_spot_light_ball.h" />
+    <ClInclude Include="oglt_texture.h" />
+    <ClInclude Include="oglt_ubo.h" />
+    <ClInclude Include="oglt_util.h" />
+    <ClInclude Include="oglt_vbo.h" />
+    <ClInclude Include="render_scene.h" />
+    <ClInclude Include="std_util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="alut_backend.cpp" />
+    <ClCompile Include="glut_backend.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="oglt_app.cpp" />
+    <ClCompile Include="oglt_assimp_model.cpp" />
+    <ClCompile Include="oglt_audio_source.cpp" />
+    <ClCompile Include="oglt_basic_shape.cpp" />
+    <ClCompile Include="oglt_camera.cpp" />
+    <ClCompile Include="oglt_fbx_model.cpp" />
+    <ClCompile Include="oglt_freetypefont.cpp" />
+    <ClCompile Include="oglt_irenderable.cpp" />
+    <ClCompile Include="oglt_light.cpp" />
+    <ClCompile Include="oglt_mesh.cpp" />
+    <ClCompile Include="oglt_resource.cpp" />
+    <ClCompile Include="oglt_scene_node.cpp" />
+    <ClCompile Include="oglt_scene_object.cpp" />
+    <ClCompile Include="oglt_shader.cpp" />
+    <ClCompile Include="oglt_skeleton_material.cpp" />
+    <ClCompile Include="oglt_skybox.cpp" />
+    <ClCompile Include="oglt_spot_light_ball.cpp" />
+    <ClCompile Include="oglt_texture.cpp" />
+    <ClCompile Include="oglt_ubo.cpp" />
+    <ClCompile Include="oglt_vbo.cpp" />
+    <ClCompile Include="render_scene.cpp" />
+    <ClCompile Include="std_util.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

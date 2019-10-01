@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="原始程式檔">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="原始程式檔\scene">
+      <UniqueIdentifier>{9e85d8c2-2d86-412e-a09f-e06fa5934943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\backend">
+      <UniqueIdentifier>{d49b6a7d-7036-4eb4-b5a1-34d4462f5096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\tools">
+      <UniqueIdentifier>{875ce96e-c627-49c7-943f-cd8c217fa1ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\backend">
+      <UniqueIdentifier>{4fb354d5-bad1-4f0b-9799-ed6c1b89a5d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\tools">
+      <UniqueIdentifier>{62974bd6-7e55-4fd8-92e2-489a92bb336c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\scene">
+      <UniqueIdentifier>{b09738fb-3eb1-47f6-b764-800147ee84a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\glsl">
+      <UniqueIdentifier>{dd4f278e-f3e8-425a-9a79-7d47eefe2fc3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="oglt_app.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_iapp.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="alut_backend.h">
+      <Filter>標頭檔\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="glut_backend.h">
+      <Filter>標頭檔\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_abo.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_assimp_model.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_audio_source.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_callback.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_fbx_model.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_freetypefont.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_camera.h">
+      <Filter>標頭檔\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_imaterial.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_irenderable.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_ishaderable.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_light.h">
+      <Filter>標頭檔\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_mesh.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_resource.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_scene_node.h">
+      <Filter>標頭檔\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_scene_object.h">
+      <Filter>標頭檔\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_skybox.h">
+      <Filter>標頭檔\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="render_scene.h">
+      <Filter>標頭檔\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_shader.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_skeleton_material.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_texture.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_ubo.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_util.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_vbo.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="std_util.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_spot_light_ball.h">
+      <Filter>標頭檔\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_basic_shape.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="oglt_ibackend.h">
+      <Filter>標頭檔\backend</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_app.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="alut_backend.cpp">
+      <Filter>原始程式檔\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="glut_backend.cpp">
+      <Filter>原始程式檔\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_light.cpp">
+      <Filter>原始程式檔\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_fbx_model.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_mesh.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_camera.cpp">
+      <Filter>原始程式檔\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_scene_node.cpp">
+      <Filter>原始程式檔\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_scene_object.cpp">
+      <Filter>原始程式檔\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_skybox.cpp">
+      <Filter>原始程式檔\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="render_scene.cpp">
+      <Filter>原始程式檔\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_assimp_model.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_audio_source.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_freetypefont.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_irenderable.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_resource.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_shader.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_skeleton_material.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_texture.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_ubo.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_vbo.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="std_util.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_spot_light_ball.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="oglt_basic_shape.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
